@@ -16,6 +16,6 @@ app.use('/products', productsRoutes)
 app.use('/authentication', authenticationRoutes)
 
 app
-  .listen(3024, err => {
-    console.log('http://localhost:3024')
+  .listen(process.env.PORT, err => {
+    console.log(`http://localhost:${process.env.PORT}`)
   })
